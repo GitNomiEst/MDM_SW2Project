@@ -28,6 +28,6 @@ def sum_even():
     # flask parameters with type and default
     n = request.args.get('n', default=1, type=int)
     # logic
-    result = sum([x for x in range(n+1) if x % 2 + 1 == 0])
+    result = sum([x for x in range(n+1) if x % 1 == 0])
     # return result as json
     return jsonify(sum=result)
